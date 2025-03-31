@@ -11,6 +11,7 @@ public class FirePokemon extends Pokemon{
         this.numberOfFlames = numberOfFlames;
     }
 
+
     public void burn() {
         if(temperature > 100){
             System.out.println("He first learned the move: Ember");

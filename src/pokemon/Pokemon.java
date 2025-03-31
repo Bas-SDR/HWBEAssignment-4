@@ -17,6 +17,8 @@ public class Pokemon {
     public void attackerOrDefender() {
         if(attack > defense){
             System.out.println("This pokemon is an attacker");
+        } else if(defense == attack) {
+            System.out.println("This pokemon is balanced");
         } else System.out.println("This pokemon is a defender");
     }
 
