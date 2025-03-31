@@ -1,6 +1,6 @@
 package pokemon;
-
-public class Pokemon {
+//Can be made abstract because no object is being created in main for Pokemon.
+public abstract class Pokemon {
     private int level;
     private int attack;
     private int defense;

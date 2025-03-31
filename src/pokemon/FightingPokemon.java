@@ -8,6 +8,7 @@ public class FightingPokemon extends Pokemon {
 
     public FightingPokemon(int level, int attack, int defense, String name, int punchingPower, String heldItem) {
         super(level, attack, defense, name);
+        setType("Fighting");
         this.punchingPower = punchingPower;
         this.heldItem = heldItem;
     }

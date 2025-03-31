@@ -7,6 +7,7 @@ public class ElectricPokemon extends Pokemon {
 
     public ElectricPokemon(int level, int attack, int defense, String name, int voltage, int speedStat, boolean zMove) {
         super(level, attack, defense, name);
+        setType("Electric");
         this.voltage = voltage;
         this.speedStat = speedStat;
         this.zMove = zMove;

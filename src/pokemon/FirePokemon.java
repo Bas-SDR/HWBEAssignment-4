@@ -11,11 +11,11 @@ public class FirePokemon extends Pokemon{
         this.numberOfFlames = numberOfFlames;
     }
 
-
-    public void burn() {
+    @Override
+    public void signatureMove() {
         if(temperature > 100){
             System.out.println("He first learned the move: Ember");
-        }
+        } else super.signatureMove();
     }
 
     public void additionalEffect() {

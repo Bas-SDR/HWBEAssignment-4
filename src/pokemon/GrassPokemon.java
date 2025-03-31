@@ -8,6 +8,7 @@ public class GrassPokemon extends Pokemon {
 
     public GrassPokemon(int level, int attack, int defense, String name, int amountOfFlowers, int amountOfLeaves) {
         super(level, attack, defense, name);
+        super.setType("Grass");
         this.amountOfFlowers = amountOfFlowers;
         this.amountOfLeaves = amountOfLeaves;
     }
@@ -18,10 +19,11 @@ public class GrassPokemon extends Pokemon {
         }else System.out.println("This pokemon smells like daisies");;
     }
 
-    public void LeafStorm(){
-        super.signatureMove();
+    @Override
+    public void signatureMove(){
         if(amountOfLeaves > 500){
-            System.out.println(" that creates a leafstorm");
-        }
+            System.out.print(" This pokemon can create a leafstorm");
+        } else super.signatureMove();
+        System.out.println(" that blows all Pokemon away");
     }
 }
